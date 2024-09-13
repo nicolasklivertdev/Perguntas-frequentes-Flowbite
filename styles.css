@@ -1,0 +1,156 @@
+* {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+}
+
+body {
+    background-color: rgb(17, 24, 38);
+}
+
+a, li {
+    font-weight: 500;
+    color: rgb(62, 130, 247);
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:focus {
+    pointer-events: none;
+}
+
+ul {
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+li::marker {
+    cursor: none;
+    color: rgb(76, 86, 99);
+}
+
+p {
+    color: rgb(157, 164, 176);
+}
+
+.container {
+    margin: auto;
+    max-width: 90rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin-bottom: 16px;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+header p {
+    margin-bottom: 64px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+hr {
+    margin-bottom: 48px;
+    border-bottom: 1px solid rgb(55, 65, 82);
+    max-width: 1231px;
+    width: 100%;
+}
+
+.S1 {
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+    gap: 2rem;
+    max-width: 100%;
+}
+
+.section1, .section2, .section3 {
+    width: 389px;
+}
+
+.paragraph {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.paragraph p {
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1023px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px 16px;
+        padding-bottom: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    header p {
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    hr {
+        margin-bottom: 32px;
+    }
+
+    .S1 {
+        display: block;
+    }
+
+    .section1, .section2, .section3 {
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .section1, .section2 {
+        padding-bottom: 2rem;
+    }
+}
